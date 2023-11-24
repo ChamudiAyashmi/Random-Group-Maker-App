@@ -138,13 +138,12 @@ class _StudentListState extends State<StudentList> {
             itemBuilder: (context, index) {
               return Card(
                 color: Colors.black,
-                // Set the elevation to create a shadow effect
                 shape: RoundedRectangleBorder(
                   borderRadius:
-                      BorderRadius.circular(10.0), // Set the border radius
+                      BorderRadius.circular(10.0), 
                   side: const BorderSide(
                       color: Color.fromARGB(
-                          255, 237, 103, 235)), // Set the border color
+                          255, 237, 103, 235)), 
                 ),
                 child: ListTile(
                   title: Text(
