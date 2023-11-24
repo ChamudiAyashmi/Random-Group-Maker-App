@@ -13,12 +13,7 @@ class _HomeState extends State<Home> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => const GradientContainer(
-          colors: [
-            Color.fromARGB(255, 175, 217, 251),
-            Color.fromARGB(255, 246, 168, 194)
-          ],
-        ),
+        builder: (context) => const GradientContainer(),
       ),
     );
   }
@@ -29,19 +24,11 @@ class _HomeState extends State<Home> {
       mainAxisSize: MainAxisSize.min,
       children: [
         const SizedBox(
-          height: 150,
-        ),
-        const Text(
-          'WELCOME !',
-          style: TextStyle(
-              fontSize: 40, color: Colors.white, fontWeight: FontWeight.bold),
-        ),
-        const SizedBox(
-          height: 300,
+          height: 450,
         ),
         ElevatedButton(
           style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.white,
+              backgroundColor: const Color.fromARGB(255, 237, 103, 235),
               foregroundColor: Colors.black,
               textStyle:
                   const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
